@@ -1,6 +1,4 @@
-require 'benchmark'
-
-# Yields the maximum product of 3 values when given three or more qualifying numbers
+# Yields the maximum product of 3 values when given 3 or more qualifying numbers
 class Calculate
   MINIMUM_LENGTH              = 3
   ERROR_INPUT_IS_NOT_AN_ARRAY = 'Input is not an array'.freeze
@@ -71,9 +69,5 @@ class Calculate
 
   def self.alert(message)
     raise StandardError, message
-  end
-
-  def self.bm(input)
-    Benchmark.measure { max_product(input) }
   end
 end
