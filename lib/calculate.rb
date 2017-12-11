@@ -17,8 +17,11 @@ class Calculate
     # Convert subset of numbers to Integers and multiply them together
     # This can be further optimized if we restrict input to Integers only.
     # See comments in `qualified_number?` method.
-    a = (set.min(2) + set.max(1)).map(&:to_i).inject(:*)
-    b = set.max(3).map(&:to_i).inject(:*)
+    # a = set.min(2).inject(:*) * set.max
+    # b = set.max(3).inject(:*)
+
+    a = (set.min(2) + set.max(1)).inject{|product, n| product.to_i * n.to_i}
+    b = set.max(3).inject{|product, n| product.to_i * n.to_i}
 
     # Compare the two subsets and return whichever is greater
     a > b ? a : b
