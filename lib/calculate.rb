@@ -2,7 +2,7 @@
 class Calculate
   MINIMUM_LENGTH              = 3
   ERROR_INPUT_IS_NOT_AN_ARRAY = 'Input is not an array'.freeze
-  ERROR_INSUFFICIENT_INPUT    = 'Input must contain at least 3 numbers'.freeze
+  ERROR_INSUFFICIENT_INPUT    = 'Input must contain at least 3 qualifying numbers'.freeze
 
   def self.max_product(set = [])
     # Valid arguments are inputs which can be converted to an array using
