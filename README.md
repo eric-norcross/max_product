@@ -8,7 +8,7 @@ Find the maximum possible product of 3 integers in the array
 
 **Examples**
 
-[1,3,7,9] yields the maximum product of 3 values as 189 (3 * 7 * 9)
+[1,3,7,9] yields the maximum product of 3 values; e.g.: (3 * 7 * 9) = 189 
 
 **Deliverable**
 
